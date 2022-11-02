@@ -6,29 +6,36 @@
    width: 100%;
 }
 
-h3 {
+.react-sandbox-plugin h3 {
    margin: 0;
 }
-p {
+.react-sandbox-plugin p {
    margin: 0;
 }
 
-form {
+.react-sandbox-plugin form {
    margin-top: 2rem;
    display: flex;
    gap: 1rem;
 }
-form,
+.react-sandbox-plugin form,
 .state-message {
-   border-radius: 1rem;
+   border-radius: 0.25rem;
    border: solid 2px lightsalmon;
    padding: 1rem;
-   width: 100%;
-   min-width: 250px;
+   min-width: 200px;
 }
 
-input[type="text"]{
-   width: 100%;
+.react-sandbox-plugin input[type="text"],
+.react-sandbox-plugin button {
+   flex-grow: 1;
+   min-width: 100px;
+}
+.react-sandbox-plugin input[type="text"] {
+   flex-basis: 85%;
+}
+.react-sandbox-plugin button {
+   flex-basis: 10%;
 }
 
 

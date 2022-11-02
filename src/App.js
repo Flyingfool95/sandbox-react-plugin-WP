@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="react-sandbox-plugin">
       <h2>React Sandbox Plugin</h2>
       <div className="state-message">
         <h3>State message:</h3>

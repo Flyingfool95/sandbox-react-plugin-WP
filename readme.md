@@ -1,4 +1,4 @@
-#React plugin template for WordPress
+# React plugin template for WordPress
 
 Uses:
 1. React (UI)

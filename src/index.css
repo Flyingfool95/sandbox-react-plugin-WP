@@ -1,0 +1,24 @@
+#react-sandbox-plugin {
+   max-width: 1280px;
+   width: 100%;
+}
+
+h3 {
+   margin: 0;
+}
+p {
+   margin: 0;
+}
+
+form {
+   margin-top: 2rem;
+   display: flex;
+   gap: 1rem;
+}
+form,
+.state-message {
+   border-radius: 1rem;
+   border: solid 2px lightsalmon;
+   padding: 1rem;
+   width: fit-content;
+}

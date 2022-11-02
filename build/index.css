@@ -1,0 +1,31 @@
+/*!*******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/index.css ***!
+  \*******************************************************************************************************************************************************************/
+#react-sandbox-plugin {
+   max-width: 1280px;
+   width: 100%;
+}
+
+h3 {
+   margin: 0;
+}
+p {
+   margin: 0;
+}
+
+form {
+   margin-top: 2rem;
+   display: flex;
+   gap: 1rem;
+}
+form,
+.state-message {
+   border-radius: 1rem;
+   border: solid 2px lightsalmon;
+   padding: 1rem;
+   width: -moz-fit-content;
+   width: fit-content;
+}
+
+
+/*# sourceMappingURL=index.css.map*/

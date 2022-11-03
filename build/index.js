@@ -13,14 +13,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _stores_globalStore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./stores/globalStore */ "./src/stores/globalStore.js");
+/* harmony import */ var _components_LocalStorageMessage_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/LocalStorageMessage.jsx */ "./src/components/LocalStorageMessage.jsx");
 
 
 
 function App() {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "react-sandbox-plugin"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, "React Sandbox Plugin"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_LocalStorageMessage_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+}
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/components/LocalStorageMessage.jsx":
+/*!************************************************!*\
+  !*** ./src/components/LocalStorageMessage.jsx ***!
+  \************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ LocalStorageMessage; }
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _stores_globalStore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stores/globalStore */ "./src/stores/globalStore.js");
+
+
+function LocalStorageMessage() {
   /* Local state */
-  const state = (0,_stores_globalStore__WEBPACK_IMPORTED_MODULE_2__["default"])(state => state.state);
-  const setState = (0,_stores_globalStore__WEBPACK_IMPORTED_MODULE_2__["default"])(state => state.setState);
+  const state = (0,_stores_globalStore__WEBPACK_IMPORTED_MODULE_1__["default"])(state => state.state);
+  const setState = (0,_stores_globalStore__WEBPACK_IMPORTED_MODULE_1__["default"])(state => state.setState);
 
   /* Functions */
   const handleStateChange = e => {
@@ -28,9 +52,7 @@ function App() {
     setState(e.target[0].value);
     localStorage.setItem("myState", e.target[0].value);
   };
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "react-sandbox-plugin"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, "React Sandbox Plugin"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "state-message"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, "State message:"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, state)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("form", {
     onSubmit: e => handleStateChange(e)
@@ -41,7 +63,6 @@ function App() {
     type: "submit"
   }, "Update state")));
 }
-/* harmony default export */ __webpack_exports__["default"] = (App);
 
 /***/ }),
 

@@ -18,7 +18,7 @@
 .react-sandbox-plugin form,
 .state-message {
    border-radius: 0.25rem;
-   border: solid 2px lightsalmon;
+   border: solid 2px rgba(255, 160, 122, 0.25);
    padding: 1rem;
    min-width: 200px;
 }
@@ -26,11 +26,19 @@
 .react-sandbox-plugin input[type="text"],
 .react-sandbox-plugin button {
    flex-grow: 1;
-   min-width: 100px;
+   min-width: 125px;
 }
 .react-sandbox-plugin input[type="text"] {
    flex-basis: 85%;
 }
 .react-sandbox-plugin button {
-   flex-basis: 10%;
+   flex-basis: 15%;
+   padding: 0.5rem 1rem;
+}
+
+@media (max-width: 540px) {
+   .react-sandbox-plugin form {
+      flex-direction: column;
+   }
+   
 }
